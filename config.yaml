@@ -1,0 +1,17 @@
+proxies:
+  - name: "MySocks5Proxy"
+    type: socks5
+    server: 104.254.211.19
+    port: 21235
+    username: En12TOsurL
+    password: tTLGzPPGVP
+    udp: true
+
+proxy-groups:
+  - name: "Proxy"
+    type: select
+    proxies:
+      - "MySocks5Proxy"
+
+rules:
+  - MATCH,Proxy
